@@ -1,0 +1,9 @@
+//check this number is even or odd and positive and negative 
+echo "enter a number"               
+read n;
+rem=$(($n % 2))
+if [ $rem -eq 0 ] ; then
+echo "even number $n \npositive number +ve"
+else
+echo "odd number $n \n negative number -ve"
+fi
