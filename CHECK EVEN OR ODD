@@ -7,3 +7,6 @@ echo "even number $n \npositive number +ve"
 else
 echo "odd number $n \n negative number -ve"
 fi
+/
+Run code in linux - sh filename.sh
+*/
