@@ -1,0 +1,10 @@
+argument=$1;
+if [ -d "${argument}" ] ; then
+echo "${argument} is a directory."
+elif [ -f "{argument}" ] ; then
+echo "${argument} is a file."
+else
+echo "${argument} is not valid."
+fi
+
+// run - sh filename filename $0 
