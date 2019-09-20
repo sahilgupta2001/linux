@@ -1,0 +1,23 @@
+echo "enter marks"
+read m1+m2+m3;
+sum=$((m1+m2+m3))
+echo "your total sum is $sum out of 300."
+avg=$(($sum/3))
+if [ $avg -gt 89 ] ; then                              // gt - greater number
+  echo "you got A+ grade."
+elif [ $avg -gt 69 ] ; then
+  echo "you got B+ grade."
+elif [ $avg -gt 49 ] ; then
+  echo "you got C grade."
+elif [ $avg -gt 39 ] ; then
+  echo "you got P grade."
+else
+  echo "you got F grade."
+fi
+
+// run - sh filename.sh
+/*output -
+enter marks 12 15 100
+your total sum is 127 out of 300
+you got F grade.
+*/
