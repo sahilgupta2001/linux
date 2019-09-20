@@ -1,0 +1,8 @@
+echo "enter any file name"
+read n;
+if [ -f $n ] ; then
+  echo "Last Modification time is "
+ls -l $n | cut -d '_' -f 6,7,8
+else
+  echo "File Doesn't Exist"
+fi
