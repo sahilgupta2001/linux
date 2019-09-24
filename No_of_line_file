@@ -1,0 +1,8 @@
+echo "enter any file name"
+read n
+if [ -f $a ] ; then
+echo "no of lines are " 
+`cat $n|wc -l`
+echo "10th line of that file"
+cat $n |sed -n 10p
+fi
